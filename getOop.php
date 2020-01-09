@@ -77,7 +77,9 @@ class Pagante extends Persona {
  //correttezza dei risultati attesi
  $pers = new Persona (Frida, Khalo);
  echo $pers . "\n". "\n";
+
  $osp = new Ospite (Frida, Khalo, 1907);
  echo $osp "\n". "\n";
+ 
  $res = new Pagante (Frida, Khalo, 1907);
  echo $res "\n". "\n";
