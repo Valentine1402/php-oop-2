@@ -40,7 +40,7 @@ class Ospite extends Persona {
   //eventualmente richiamando i metodi della classe padre
   function __construct($nome, $cognome , $annoDnascita) {
 
-    parent:: __construct($nome, $cognome);
+    parent::__construct($nome, $cognome);
     $this -> annoDnascita = $annoDnascita;
 
   }
@@ -65,7 +65,7 @@ class Pagante extends Persona {
   }
 
   }
-  
+
   function __toString() {
 
     return parent:: __toString() $this -> residenza;
