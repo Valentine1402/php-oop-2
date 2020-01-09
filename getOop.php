@@ -29,3 +29,7 @@ class Persona {
             . $this -> cognome;
    }
 }
+
+
+$pers = new Persona (Frida, Khalo);
+echo $pers ;
