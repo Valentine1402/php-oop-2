@@ -25,8 +25,8 @@ class Persona {
 
    public function __toString() {
    /* rappresentazione testuale dell'oggetto */
-     return   $this -> nome . "\n"
-            . $this -> cognome;
+     return   "Nome: " . $this -> nome . "\n"
+            . ", Cognome: " . $this -> cognome;
    }
 }
 
@@ -45,10 +45,10 @@ class Ospite extends Persona {
 
   }
 
-  }
+
   function __toString() {
 
-    return parent:: __toString() $this -> annoDnascita;
+    return parent:: __toString() ."\n". ", Anno di nascita: " . $this -> annoDnascita;
 
   }
 }
@@ -64,11 +64,10 @@ class Pagante extends Persona {
 
   }
 
-  }
 
   function __toString() {
 
-    return parent:: __toString() $this -> residenza;
+    return parent:: __toString() ."\n". ", Indirizzo: " . $this -> residenza;
 
   }
 }
@@ -76,10 +75,10 @@ class Pagante extends Persona {
  //- Eseguire dei test, istanziando ogni classe definita e testando la
  //correttezza dei risultati attesi
  $pers = new Persona (Frida, Khalo);
- echo $pers . "\n". "\n";
-
+ echo $pers . "<br>";
+ echo "\n". "\n" ."<br>";
  $osp = new Ospite (Frida, Khalo, 1907);
- echo $osp "\n". "\n";
-
- $res = new Pagante (Frida, Khalo, NewMessico);
- echo $res "\n". "\n";
+ echo $osp . "<br>";
+ echo "\n". "\n"."<br>";
+ $res = new Pagante (Frida, Khalo, Coyoacán);
+ echo $res . "\n". "\n";
