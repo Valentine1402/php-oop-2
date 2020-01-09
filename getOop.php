@@ -80,6 +80,6 @@ class Pagante extends Persona {
 
  $osp = new Ospite (Frida, Khalo, 1907);
  echo $osp "\n". "\n";
- 
- $res = new Pagante (Frida, Khalo, 1907);
+
+ $res = new Pagante (Frida, Khalo, NewMessico);
  echo $res "\n". "\n";
